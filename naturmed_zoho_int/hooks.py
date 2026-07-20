@@ -1,5 +1,5 @@
 app_name = "naturmed_zoho_int"
-app_title = "Naturmed Zoho Int"
+app_title = "NaturMed Zoho Int"
 app_publisher = "IBSL"
 app_description = "Int"
 app_email = "subodh.b@indibasolutions.com"
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "naturmed_zoho_int",
 # 		"logo": "/assets/naturmed_zoho_int/logo.png",
-# 		"title": "Naturmed Zoho Int",
+# 		"title": "NaturMed Zoho Int",
 # 		"route": "/naturmed_zoho_int",
 # 		"has_permission": "naturmed_zoho_int.api.permission.has_app_permission"
 # 	}

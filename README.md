@@ -1,4 +1,4 @@
-### Naturmed Zoho Int
+### NaturMed Zoho Int
 
 Int
 
