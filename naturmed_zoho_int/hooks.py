@@ -137,13 +137,12 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Lead": {
+		"after_insert": "naturmed_zoho_int.api.lead_create.create_lead",
+
+	}
+}
 
 # Scheduled Tasks
 # ---------------
