@@ -6,7 +6,10 @@
  "engine": "InnoDB",
  "field_order": [
   "token_url",
-  "lead_url"
+  "lead_url",
+  "client_id",
+  "client_secret",
+  "refresh_token"
  ],
  "fields": [
   {
@@ -18,13 +21,28 @@
    "fieldname": "lead_url",
    "fieldtype": "Data",
    "label": "Lead URL"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client ID"
+  },
+  {
+   "fieldname": "client_secret",
+   "fieldtype": "Password",
+   "label": "Client Secret"
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Password",
+   "label": "Refresh Token"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-07-20 12:56:15.451188",
+ "modified": "2026-07-21 18:23:18.870575",
  "modified_by": "Administrator",
  "module": "NaturMed Zoho Int",
  "name": "Zoho Configuration",

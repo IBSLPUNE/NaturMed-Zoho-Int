@@ -18,14 +18,14 @@ def create_lead(doc, method=None):
 
         token_response = requests.post(
             token_url,
-                params={
-                    "refresh_token": "1000.957330158b7c18c9c557a4eefd5315a1.c9b2c012d78e13bcd26b8c217ddcafe7",
-                    "client_id": "1000.DLPRFKDWMPA9538R4OC2H4FEMT4MBN",
-                    "client_secret": "6e1c4f56fc3ed1b80ca51dfc24f05b9048e2efc3c2",
-                    "grant_type": "refresh_token"
-                },
-                timeout=30
-            )
+            params={
+        "refresh_token": config.get_password("refresh_token"),
+        "client_id": config.client_id,
+        "client_secret": config.get_password("client_secret"),
+        "grant_type": "refresh_token"
+        },
+        timeout=30
+        )
 
 
 
