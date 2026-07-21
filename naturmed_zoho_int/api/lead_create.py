@@ -9,13 +9,13 @@ def clean(value):
 
 
 def create_lead(doc, method=None):
-    print("************hook_triggered****************************************************")
+
     try:
         config = frappe.get_single("Zoho Configuration")
 
         token_url = config.token_url
         lead_url = config.lead_url
-        print("*************&&&&&&&&&&&&&&&&&&&&&&&&&&********", token_url, lead_url)
+
         token_response = requests.post(
             token_url,
                 params={
@@ -26,13 +26,13 @@ def create_lead(doc, method=None):
                 },
                 timeout=30
             )
-        print("1111111111111111111111111111111111111111111111111111111", token_response)
+
 
 
         token_response.raise_for_status()
 
         access_token = token_response.json().get("access_token")
-        print("22222222222222222222222222222222222222222222", access_token)
+
 
         if not access_token:
             frappe.log_error(
@@ -87,7 +87,7 @@ def create_lead(doc, method=None):
                 "blueprint"
             ]
         }
-        print("3333333333333333333333333333333333333333333333333333333", payload)
+
 
         response = requests.post(
             lead_url,
@@ -99,7 +99,7 @@ def create_lead(doc, method=None):
             timeout=30
         )
 
-        print("444444444444444444444444444444444444444444444", response)
+
 
         try:
             response_data = response.json()
